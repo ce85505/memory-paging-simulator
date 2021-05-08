@@ -1,0 +1,17 @@
+Handin an electronic copy of all the sources, README, Makefile(s), and results. Create your programs in a directory called username.6 where username is your login name on hoare. Once you are done with everything, remove the executables and object files, and issue the following commands:
+% cd
+% chmod 755 ~
+% ~sanjiv/bin/handin cs4760 6
+% chmod 700 ~
+
+with weighted memory distribution:
+	access per second (10100 in 113.920s): 	88.659
+	faults per access: 		0.26218
+	average access time: 		5219 us
+	
+without weighted memory distribution:
+	access per second (10100 in 140.968s): 	71.647
+	faults per access: 		0.42158
+	average access time: 		8358 us
+
+the page replacement algorithm creates fewer faults with the weighted memory requesting scheme because the pages being requested by each process are more likely to already exist in the frame table. the random memory requesting scheme is more realistic in a naive implementation but causes more frequent pagefaults and therefore increases the average time of memory access and decreases the average speed
